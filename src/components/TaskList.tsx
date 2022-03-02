@@ -1,11 +1,10 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { AppState } from "../state";
-import { completeTask, removeTask } from "../todolist/actionCreators";
+import { useAppDispatch, useAppSelector } from "../store";
+import { completeTask, removeTask } from "../modules/todoListSlice";
 
 export const TaskList: React.FC = () => {
-  const dispatch = useDispatch();
-  const state = useSelector((state: AppState) => state);
+  const dispatch = useAppDispatch();
+  const state = useAppSelector(state => state);
 
   const taskItems = state.tasks
     .filter(task => {

@@ -1,12 +1,10 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from '../filter/actionCreators';
-import { FilterState } from '../filter/state';
-import { AppState } from '../state';
+import { FilterState, setFilter } from '../modules/filterSlice';
+import { useAppDispatch, useAppSelector } from '../store';
 
 export const Filter: React.FC = () => {
-  const dispatch = useDispatch();
-  const currentFilter = useSelector((state: AppState) => state.filter);
+  const dispatch = useAppDispatch();
+  const currentFilter = useAppSelector(state => state.filter);
 
   const renderFilter = (filter: FilterState, text: string) => {
     if (filter === currentFilter) {
