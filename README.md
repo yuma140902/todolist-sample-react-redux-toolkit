@@ -2,6 +2,11 @@
 
 Redux、Redux、Redux Toolkitのサンプル
 
+## 他のサンプル
+
+- Redux Toolkitなし
+  - https://github.com/yuma140902/todolist-sample-react-redux
+
 ## Available Scripts
 
 In the project directory, you can run:
