@@ -2,7 +2,7 @@ import React from 'react';
 import { FilterState, setFilter } from '../modules/filterSlice';
 import { useAppDispatch, useAppSelector } from '../store';
 
-export const Filter: React.FC = () => {
+export const FilterSelector: React.FC = () => {
   const dispatch = useAppDispatch();
   const currentFilter = useAppSelector(state => state.filter);
 
