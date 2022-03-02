@@ -2,6 +2,8 @@
 
 Redux、Redux、Redux Toolkitのサンプル
 
+ディレクトリ構成はducksパターン
+
 ## 他のサンプル
 
 - Redux Toolkitなし
