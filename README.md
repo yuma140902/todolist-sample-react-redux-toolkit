@@ -1,4 +1,4 @@
-# Redux Sample
+# TodoList Sample
 
 Redux、Redux、Redux Toolkitのサンプル
 
